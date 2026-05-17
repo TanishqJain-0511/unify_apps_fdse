@@ -74,7 +74,7 @@ An AI agent-driven pipeline that ingests unstructured customer data from AWS S3,
 - **CRM 5xx / network** — exponential backoff + jitter, up to 5 attempts
 - **CRM 4xx** — `CorrectionAgent` fixes the record using the CRM error message, up to 4 rounds feeding each new error back in
 
-**Failure file — `onboarding_failures.json`- `source_key` → S3 object key
+**Failure file** — `onboarding_failures.json`- `source_key` → S3 object key
 - `stage` → `s3_download` / `llm_parse` / `crm_client_error` / `crm_correction_agent` / `crm_correction_retry` / `crm_write`
 - `error` → error message
 - `record` → `CustomerOnboardingRecord` at time of failure (if available)
