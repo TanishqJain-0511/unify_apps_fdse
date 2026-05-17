@@ -1,6 +1,6 @@
 # Enterprise Customer Onboarding Pipeline
 
-An AI agent-driven pipeline that ingests unstructured customer data from AWS S3, parses it with GPT-4o-mini, and writes structured records to a legacy CRM REST API — with full retry/resilience handling and agentic recovery loops.
+An AI agent-driven pipeline that ingests unstructured customer data from AWS S3, parses it with GPT-4o-mini, and writes structured records to a legacy CRM REST API with full retry/resilience handling and agentic recovery loops.
 
 ---
 
